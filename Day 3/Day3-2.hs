@@ -42,7 +42,7 @@ removeDupes chars = map (head) (group (sort chars))
 
 -- Gets common items within a pair of bags
 commonItems :: Bag -> Bag -> [Char]
-commonItems bag1 bag2 = traceShow (intersect bag1 bag2) intersect bag1 bag2
+commonItems bag1 bag2 = intersect bag1 bag2
 
 -- Converts a list of chars into their respective values
 listToValue :: [Char] -> Int
